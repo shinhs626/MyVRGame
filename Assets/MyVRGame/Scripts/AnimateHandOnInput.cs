@@ -23,10 +23,10 @@ namespace MyVRGame
         {
             //인풋값 처리
             float triggerValue = pinchAnimationAction.action.ReadValue<float>();
-            float gripValue = pinchAnimationAction.action.ReadValue<float>();
+            float gripValue = gripAnimationAction.action.ReadValue<float>();
 
             //애니메이션
-            Debug.Log(triggerValue);
+            //Debug.Log(triggerValue);
             animator.SetFloat("Trigger",triggerValue);
             animator.SetFloat("Grip", gripValue);
         }
